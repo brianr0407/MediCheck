@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{13A3E606-CEC7-8279-14A3-1B32473E3C76}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>VIEW</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CONTROLLER\CONTROLLER.vcxproj">
+      <Project>{45781045-5a12-7d7b-3c55-9ccb593bf635}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.vcxproj">
+      <Project>{30c04796-38c1-5553-a373-7bef0a5cdeba}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="frmAgregarAdmin.cpp" />
+    <ClCompile Include="frmAgregarAlarma.cpp" />
+    <ClCompile Include="frmAgregarMedicamento.cpp" />
+    <ClCompile Include="frmAgregarPaciente.cpp" />
+    <ClCompile Include="frmAgregarReceta.cpp" />
+    <ClCompile Include="frmAgregarRecetasPaciente.cpp" />
+    <ClCompile Include="frmEliminador.cpp" />
+    <ClCompile Include="frmEliminarAdmin.cpp" />
+    <ClCompile Include="frmEliminarAlarma.cpp" />
+    <ClCompile Include="frmEliminarMedicamento.cpp" />
+    <ClCompile Include="frmEliminarPaciente.cpp" />
+    <ClCompile Include="frmEliminarReceta.cpp" />
+    <ClCompile Include="frmMantAdministrador.cpp" />
+    <ClCompile Include="frmMantAlarma.cpp" />
+    <ClCompile Include="frmMantMedicamentos.cpp" />
+    <ClCompile Include="frmMantPacientes.cpp" />
+    <ClCompile Include="frmMantReceta.cpp" />
+    <ClCompile Include="frmModificarAdmin.cpp" />
+    <ClCompile Include="frmModificarAlarma.cpp" />
+    <ClCompile Include="frmModificarMedicamento.cpp" />
+    <ClCompile Include="frmModificarPaciente.cpp" />
+    <ClCompile Include="frmModificarReceta.cpp" />
+    <ClCompile Include="frmAdherenciaMedicamento.cpp" />
+    <ClCompile Include="frmAlertasCriticas.cpp" />
+    <ClCompile Include="frmCumplimiento.cpp" />
+    <ClCompile Include="frmDispensado.cpp" />
+    <ClCompile Include="frmDosisOmitidas.cpp" />
+    <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="frmPruebasESP32.cpp" />
+    <ClCompile Include="frmPuntualidad.cpp" />
+    <ClCompile Include="frmRestauracion.cpp" />
+    <ClCompile Include="frmTendencias.cpp" />
+    <ClCompile Include="frmUsoSistema.cpp" />
+    <ClCompile Include="frmVerificador.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frmAgregarAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAgregarAlarma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAgregarMedicamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAgregarPaciente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAgregarReceta.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAgregarRecetasPaciente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEliminador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEliminarAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEliminarAlarma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEliminarMedicamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEliminarPaciente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEliminarReceta.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPruebasESP32.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAdherenciaMedicamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmAlertasCriticas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmCumplimiento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmDispensado.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmDosisOmitidas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantAdministrador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantAlarma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantMedicamentos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantPacientes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantReceta.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmModificarAdmin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmModificarAlarma.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmModificarMedicamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmModificarPaciente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmModificarReceta.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPuntualidad.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRestauracion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmTendencias.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmUsoSistema.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVerificador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReporteFormBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAgregarAdmin.resx">
+      <DependentUpon>frmAgregarAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarAlarma.resx">
+      <DependentUpon>frmAgregarAlarma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarMedicamento.resx">
+      <DependentUpon>frmAgregarMedicamento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarPaciente.resx">
+      <DependentUpon>frmAgregarPaciente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarReceta.resx">
+      <DependentUpon>frmAgregarReceta.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarRecetasPaciente.resx">
+      <DependentUpon>frmAgregarRecetasPaciente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCumplimiento.resx">
+      <DependentUpon>frmCumplimiento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDosisOmitidas.resx">
+      <DependentUpon>frmDosisOmitidas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminador.resx">
+      <DependentUpon>frmEliminador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarAdmin.resx">
+      <DependentUpon>frmEliminarAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarAlarma.resx">
+      <DependentUpon>frmEliminarAlarma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarMedicamento.resx">
+      <DependentUpon>frmEliminarMedicamento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarPaciente.resx">
+      <DependentUpon>frmEliminarPaciente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarReceta.resx">
+      <DependentUpon>frmEliminarReceta.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPruebasESP32.resx">
+      <DependentUpon>frmPruebasESP32.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantAdministrador.resx">
+      <DependentUpon>frmMantAdministrador.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantAlarma.resx">
+      <DependentUpon>frmMantAlarma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantMedicamentos.resx">
+      <DependentUpon>frmMantMedicamentos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantPacientes.resx">
+      <DependentUpon>frmMantPacientes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantReceta.resx">
+      <DependentUpon>frmMantReceta.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarAdmin.resx">
+      <DependentUpon>frmModificarAdmin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarAlarma.resx">
+      <DependentUpon>frmModificarAlarma.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarMedicamento.resx">
+      <DependentUpon>frmModificarMedicamento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarPaciente.resx">
+      <DependentUpon>frmModificarPaciente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarReceta.resx">
+      <DependentUpon>frmModificarReceta.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuntualidad.resx">
+      <DependentUpon>frmPuntualidad.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTendencias.resx">
+      <DependentUpon>frmTendencias.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerificador.resx">
+      <DependentUpon>frmVerificador.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

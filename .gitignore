@@ -1,0 +1,19 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+**/.vs/
+**/x64/
+**/[Dd]ebug/
+**/[Rr]elease/
+*.obj
+*.dll
+*.exe
+*.pdb
+*.ipch
+*.tlog
+*.log
+*.cache
+*.rar
+video 2.1.mp4

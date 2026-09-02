@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CONTROLLER/CONTROLLER.vcxproj" />
+  <Project Path="MODEL/MODEL.vcxproj" />
+  <Project Path="VIEW/VIEW.vcxproj" />
+</Solution>

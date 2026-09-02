@@ -1,0 +1,2 @@
+#include "frmMantReceta.h"
+
